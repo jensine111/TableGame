@@ -30,6 +30,7 @@ import java.util.List;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+import GroupE.SushiGoAgent;
 
 
 public class Game {
@@ -732,12 +733,14 @@ public class Game {
 //        players.add(new HumanConsolePlayer());
 //        players.add(new HumanConsolePlayer());
 //        players.add(new RandomPlayer());
-//        players.add(new RandomPlayer());
         players.add(new RandomPlayer());
-        players.add(new RandomPlayer());
+        players.add(new GroupE.SushiGoAgent());
+        // No imports needed at the top! This works natively anywhere in the project.
+        //players.add(new RandomPlayer());
+        //players.add(new RandomPlayer());
 //        players.add(new HumanGUIPlayer(ac));
         players.add(new BasicMCTSPlayer());
-        players.add(new BasicMCTSPlayer());
+        //players.add(new BasicMCTSPlayer());
 //        players.add(new BasicMCTSPlayer());
 //        players.add(new BasicMCTSPlayer());
 

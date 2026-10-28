@@ -1,0 +1,8 @@
+{
+  "class": "GroupE.SushiGoAgent",
+  "args": {
+    "K": 1.414,
+    "rolloutLength": 10,
+    "maxTreeDepth": 10
+  }
+}
